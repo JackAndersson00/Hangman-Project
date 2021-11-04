@@ -138,8 +138,8 @@ public class HangGame {
             System.out.println("Word inputs: "+GuessArray);
         }
     }
-    public static void LoadStart() throws FileNotFoundException { //Method for classic gamemode. Player gets a random word based on the selected category and difficulty.
-        String Word = HangLoad.LoadWord();
+    public static void LoadStart() throws FileNotFoundException { //Method for Loading gamemode. Player gets a random word based on the selected file.
+        String Word = HangLoad.LoadWord(); //Loads words from file and puts in an array. Randomly picks word from array.
         RunLG = true; //makes sure that the game loops.
         HangCount= 1; //resets the hanging of the man progression
         ArrayList<Character> GuessArray = new ArrayList<>(); //creates array for guessing attempts.
